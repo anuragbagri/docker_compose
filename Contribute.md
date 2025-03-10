@@ -20,11 +20,13 @@ cd <repository_name>
 
 ## Docker installation
 
+database used is postgres db from neon.tech, not from docker postgres....
+
 - Install docker
 - start postgres
 - docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
-- build the image of the app - `docker build -t user_proejct .`
-- start the image - `docker run -p 3000:3000 user-project`
+- build the image of the app - `docker build -t user_project .`
+- start the image of the app - `docker run -p 3000:3000 -d user_project`
 
 ## Docker Compose Installation
 
